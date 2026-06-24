@@ -18,11 +18,14 @@
 
 ```bash
 # 1. 下载 whisper.cpp 预编译版本（Windows），或自行编译
-#    https://github.com/ggerganov/whisper.cpp/releases
+#    （cublas 为 GPU 版本，会显著提升速度，但需要先安装 CUDA）
+#    whisper.cpp 发布页：https://github.com/ggerganov/whisper.cpp/releases
+#    CUDA 下载：https://developer.nvidia.com/cuda-toolkit
 #    解压后获得 whisper-cli.exe
 
 # 2. 下载 ggml 模型（推荐 medium，平衡速度与精度）
-#    https://huggingface.co/ggerganov/whisper.cpp/tree/main
+#    HuggingFace：https://huggingface.co/ggerganov/whisper.cpp/tree/main
+#    国内用户推荐使用镜像站：https://hf-mirror.com/ggerganov/whisper.cpp/tree/main
 #    下载 ggml-medium.bin 或 ggml-large-v3.bin
 ```
 
